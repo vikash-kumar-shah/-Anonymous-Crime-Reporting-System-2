@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="firn.css">
+    <link rel="shortcut icon" href="mask.svg">
+    <title>FIR Registration</title>
+</head>
+<body>
+    <div class="first">
+        <div class="form">
+            <div class="heading">
+                Fill FIR Details
+            </div>
+            <form action="firn.php" method="post">
+                <input type="text" id="Name" placeholder="Name" name="name" required>
+                <input type="text" id="Father Name" placeholder="Father Name" name="fname" required>
+                <input type="numberic" id="Aadhar Number" placeholder="Aadhar Number" name="aadhar" required>
+                <input type="text" id="Address" placeholder="Address" name="address" required>
+                <!-- <textarea id="Address" placeholder="Address" rows="9" cols="9"></textarea>
+                <br> -->
+                <input type="tel" id="Pincode" placeholder="Pincode" name="pincode" required>
+                <input type="email" id="Email" placeholder="Email" name="email" required>
+                <input type="numberic" id="Phone Number" placeholder="Phone Number" name="phone" required>
+                <!-- <input type="text" id="Complaint" placeholder="Complaint"> -->
+                <textarea id="Complaint" placeholder="Complaint" rows="9" cols="9" name="complaint" required></textarea>
+                <input type="file" id="Proof" placeholder="Proof">
+                <input type="submit" value="Submit"  id="Submit">
+                <!-- <div class="enter">
+                    <input type="button" value="Submit" id="Submit">
+                    <input type="button" value="Submit Anonymously" id="sa">
+                </div> -->
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

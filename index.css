@@ -1,0 +1,221 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Montserrat', sans-serif;
+    /* border:2px solid red; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:100vh;
+    width:100vw;
+    /* border:2px solid red; */
+    background-color: #080c24;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    height:10vh;
+    width:100vw;
+    /* border:2px solid red; */
+    background-color: #ffffff;
+}
+.menu1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100%;
+    width:20%;
+    /* border:2px solid red; */
+}
+.menu2{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: row;
+    height:100%;
+    width:80%;
+    color:#080c24;
+    font-weight: 600;
+    /* border:2px solid red; */
+}
+.login{
+    /* border:2px solid red; */
+    padding: 10px;
+    height:36%;
+    width:10%;
+    border-radius: 4px;
+    color:#ffffff;
+    background-color: #080c24;
+}
+.menu2>a{
+    height:36%;
+    padding:8px;
+    transition: all 0.2s linear;
+    border-bottom:1px solid transparent;
+}
+.menu2>a:hover{
+    border-bottom:1px solid #080c24;
+}
+
+.logo{
+    /* border:2px solid red; */
+    height:8vh;
+    width:10vw;
+}
+.inner{
+    height:90vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    /* border:2px solid red; */
+}
+.inner1{
+    height:100%;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    /* border:2px solid red; */
+}
+.inner2{
+    height:100%;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    /* border:2px solid red; */
+}
+.moto{
+    font-weight: 600;
+    background-size: 100%;
+    background-image: linear-gradient(160deg,#cbf5ff,#42c9ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    font-size: 8vh;
+    /* color: white; */
+}
+.desc{
+    height: 10vh;
+    width: 65%;
+    /* border: 2px solid red; */
+    color:rgb(132, 200, 255);
+    margin-left: -18vw;
+}
+.report{
+    height:50vh;
+    width:50vh;
+    border-left:1px solid rgba(255, 255, 255, 0.425); 
+    /* border-radius: 8px; */
+    /* background-color: #ffffff38; */
+}
+
+@media (max-width:800px) {
+    .first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        height:200vh;
+        width:100vw;
+        /* border:2px solid red; */
+        background-color: #080c24;
+    }
+    .inner{
+        height:100vh;
+        width:100vw;
+        margin-bottom: 120vh;
+        /* border:2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        /* border:2px solid red; */
+    }
+    .inner1{
+        height:100%;
+        width:100vw;
+        font-size:10px;
+        
+    }
+    .moto{
+        font-size: 4vh;
+        /* color: white; */
+    }
+    .desc{
+        height: 20vh;
+        font-size: 2vh;
+        width: 90%;
+    }
+    .report{
+        height:40vh;
+        width:40vh; 
+        border:none;
+    }
+    .menu1{
+        display: none;
+    }
+    .menu2{
+        position: absolute;
+        background-color:white;
+        height:20vh;
+        width: 100vw;
+        display: flex;
+        align-items:center;
+        justify-content:space-evenly;
+        flex-direction: column;
+        margin-top: -184vh;
+        margin-left: 100vw;
+        transition: all 0.2s linear;
+    }
+    .menu2>a{
+        height:auto;
+        padding:0px;
+        transition: all 0.2s linear;
+        border-bottom:1px solid transparent;
+    }
+    .login{
+        width:25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="checkbox"]
+    {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        appearance: none;
+        height: 40px;
+        width:40px;
+        margin-left: 10vw;
+        margin-bottom: 195vh;
+        background-image: url(hamburger.svg);
+        /* background-repeat:no-repeat; */
+        background-color: transparent;
+        /* border: 2px solid red; */
+    }
+    input[type="checkbox"]:checked
+    {
+        background-image: url(cross.svg);
+        background-size: 35px;
+    }
+    input[type="checkbox"]:checked~.menu2{
+        margin-top: -250vh;
+        /* border: 2px solid red; */
+    }
+
+}

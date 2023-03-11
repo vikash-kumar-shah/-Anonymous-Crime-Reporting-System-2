@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="track.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Cases</title>
+    <link rel="shortcut icon" href="mask.svg">
+</head>
+<body>
+    <div class="first">
+        <div class="upper">
+            Track Your FIR Status
+        </div>
+        <div class="lower">
+            <div class="search">
+                <label>Enter Reference ID:</label>
+                <input type="numeric" >
+                <!-- <input type="submit" value="Search" onsubmit="search(this);" onclick="search(this);" id="search"> -->
+                <button onclick="search()">Search</button>
+            </div>
+            <div class="result" id="r">
+                <div class="out1">
+                    <div class="step1">
+                        <img src="telegram.svg" alt="" class="final">
+                    </div>
+                    <p>Complaint Sent</p>
+                </div>
+                <div class="out2">
+                    <div class="step2">
+                        <img src="accept.svg" alt="" class="final" id="final1">
+                    </div>
+                    <p>Complaint Accepted</p>
+                </div>
+                <div class="out3">
+                    <div class="step3">
+                        <img src="key.svg" alt="" class="final">
+                    </div>
+                    <p>Complaint Solved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function search()
+        {
+            // alert("dfffb");
+            
+            // document.getElementById("r").style.display="none";
+            document.getElementById("r").style.display="flex";
+        }
+    </script>
+</body>
+</html>
